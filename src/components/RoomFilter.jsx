@@ -65,7 +65,7 @@ function RoomFilter({rooms}) {
         {/* end select type */}
         {/* guests  */}
         <div className="form-group">
-          <label htmlFor="capacity">Guests</label>
+          <label htmlFor="capacity">Liczba osób</label>
           <select
             name="capacity"
             id="capacity"
@@ -94,6 +94,56 @@ function RoomFilter({rooms}) {
           />
         </div>
         {/* end of room price */}
+        {/* room size  */}
+        <div className="form-group">
+          <label htmlFor="size">
+            Metraż
+          </label>
+          <div className="size-inputs">
+            <input
+              type="number"
+              name="minSize"
+              id="size"
+              value={minSize}
+              onChange={handleChange}
+              className="size-input"
+            />
+            <input
+              type="number"
+              name="maxSize"
+              id="size"
+              value={maxSize}
+              onChange={handleChange}
+              className="size-input"
+            />
+          </div>
+        </div>
+        {/* end of room size*/}
+        {/* room extras  */}
+        <div className="form-group">
+          <div className="single-extra">
+
+            <input
+              type="checkbox"
+              name="breakfast"
+              id="breakfast"
+              checked={breakfast}
+              onChange={handleChange}
+            />
+            <label htmlFor="breakfast">Śniadanie</label>
+          </div>
+          <div className="single-extra">
+            <input
+              type="checkbox"
+              name="pets"
+              id="pets"
+              checked={pets}
+              onChange={handleChange}
+            />
+            <label htmlFor="pets">Zwierzaki</label>
+          </div>
+        </div>
+        {/* end of room extras*/}
       </form>
     </section>
   );
