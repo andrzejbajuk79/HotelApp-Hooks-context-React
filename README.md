@@ -9,6 +9,9 @@
 
 > filtroweanie:ilosc gosci, rodzaj, metraz, cena, zwierzaki
 
+// przy uzyciu auto fit jeden komponent rozciaga sie na cala szerokosc
+ grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+
 https://school.geekwall.in/p/ryNw8MJNr/in-depth-react-tutorial-build-a-hotel-reservation-site-with-contentful-and-netlify
 tests
 
