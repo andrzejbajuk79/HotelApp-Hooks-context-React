@@ -9,7 +9,7 @@ const Home = () => {
  return (
   <>
    <Hero>
-    <Banner title='Luxury rooms' subtitle='deluxe rooms starting at $35.99'>
+    <Banner title='Luksusowe Pokoje' subtitle='deluxe rooms starting at $35.99'>
      {' '}
      <Link to='rooms' className='btn-primary'>
       Znajdz swoje miejsce!!
